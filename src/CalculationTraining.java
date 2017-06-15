@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Created by markus on 15.06.17.
  */
-public class Rechentraining {
+public class CalculationTraining {
 
     private static class Node {
         int num1;
@@ -37,13 +37,19 @@ public class Rechentraining {
             tasks = in.nextInt();
         }
 
+        System.out.println("Tasks:");
         for (int i = 0; i < tasks; i++) {
+            Node node = compute(classOne);
 
+            System.out.print(node.num1 + " " + node.cS + " " + node.num2 + " = ");
+            int input = in.nextInt();
+            if (input == node.result) System.out.println("Correct!");
+            else System.out.println("Wrong the correct result is " + node.result);
         }
 
     }
 
-    public static Node computeSign(boolean classOne) {
+    public static Node compute(boolean classOne) {
         if (classOne) {
             int random = (int) (Math.random()*2);
             if (random == 0) return addition(true);
@@ -62,7 +68,7 @@ public class Rechentraining {
 
     public static Node addition(boolean classOne) {
         int size = 100;
-        if (classOne) size = 200;
+        if (classOne) size = 20;
 
         int num1 = (int) (Math.random() * size + 1);
         int num2 = size - num1;

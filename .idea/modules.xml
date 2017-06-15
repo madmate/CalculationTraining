@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Rechentraining.iml" filepath="$PROJECT_DIR$/Rechentraining.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CalculationTraining.iml" filepath="$PROJECT_DIR$/CalculationTraining.iml" />
     </modules>
   </component>
 </project>
