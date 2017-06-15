@@ -69,7 +69,6 @@ public class CalculationTraining {
     public static Node addition(boolean classOne) {
         int size = 100;
         if (classOne) size = 20;
-
         int num1 = (int) (Math.random() * size + 1);
         int num2 = (int) (Math.random() * (size - num1));
         return new Node(num1, num2, '+', num1+num2);
@@ -79,7 +78,6 @@ public class CalculationTraining {
     public static Node subtraction(boolean classOne) {
         int size = 100;
         if (classOne) size = 20;
-
         int num1 = (int) (Math.random() * size + 1);
         int num2 = (int) (Math.random() * num1 + 1);
         return new Node(num1, num2, '-', num1-num2);
@@ -87,19 +85,12 @@ public class CalculationTraining {
 
     public static Node multiplication() {
         int size = 10;
-
         int num1 = (int) (Math.random() * size + 1);
         int num2 = (int) (Math.random() * size + 1);
         return new Node(num1, num2, '*', num1*num2);
     }
 
     public static Node division() {
-        int num1 = (int) (Math.random() * 100 + 1);
-        int num2 = (int) (Math.random() * Math.sqrt(num1) + 1);
-        return new Node(num1, num2, '/', num1 / num2);
-    }
-
-    public static Node divisionReverseMulti() {
         int size = 10;
         int num2 = (int) (Math.random() * size + 1);
         int result = (int) (Math.random() * size + 1);
