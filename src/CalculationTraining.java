@@ -96,6 +96,13 @@ public class CalculationTraining {
     public static Node division() {
         int num1 = (int) (Math.random() * 100 + 1);
         int num2 = (int) (Math.random() * Math.sqrt(num1) + 1);
-        return new Node(num1, num2, '-', num1/num2);
+        return new Node(num1, num2, '/', num1 / num2);
+    }
+
+    public static Node divisionReverseMulti() {
+        int size = 10;
+        int num2 = (int) (Math.random() * size + 1);
+        int result = (int) (Math.random() * size + 1);
+        return new Node(num2 * result, num2, '/', result);
     }
 }
