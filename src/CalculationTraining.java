@@ -71,7 +71,7 @@ public class CalculationTraining {
         if (classOne) size = 20;
 
         int num1 = (int) (Math.random() * size + 1);
-        int num2 = size - num1;
+        int num2 = (int) (Math.random() * (size - num1));
         return new Node(num1, num2, '+', num1+num2);
 
     }
